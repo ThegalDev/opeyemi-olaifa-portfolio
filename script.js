@@ -220,8 +220,8 @@ function sendMessage() {
     }
 
     // Show loading state
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    btn.disabled = true;
+    //btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    //btn.disabled = true;
 
     // Simulate sending (replace with actual email service)
     setTimeout(() => {
@@ -845,106 +845,106 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Preloader functionality
-function initPreloader() {
+//function initPreloader() {
     // Create preloader
-    const preloader = document.createElement('div');
-    preloader.id = 'preloader';
-    preloader.innerHTML = `
-        <div class="preloader-content">
-            <div class="preloader-logo">Opeyemi Olaifa</div>
-            <div class="preloader-spinner">
-                <div class="spinner"></div>
-            </div>
-            <div class="preloader-text">Loading Portfolio...</div>
-        </div>
-    `;
+  //  const preloader = document.createElement('div');
+    //preloader.id = 'preloader';
+    //preloader.innerHTML = `
+      //  <div class="preloader-content">
+        //    <div class="preloader-logo">Opeyemi Olaifa</div>
+          //  <div class="preloader-spinner">
+            //    <div class="spinner"></div>
+            //</div>
+            //<div class="preloader-text">Loading Portfolio...</div>
+        //</div>
+    //`;
     
     // Add preloader styles
-    const preloaderStyles = document.createElement('style');
-    preloaderStyles.textContent = `
-        #preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #2d5a50 0%, #4a7c59 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10000;
-            transition: opacity 0.5s ease;
-        }
+ //   const preloaderStyles = document.createElement('style');
+   // preloaderStyles.textContent = `
+    //    #preloader {
+    //        position: fixed;
+    //        top: 0;
+    //        left: 0;
+    //        width: 100%;
+    //        height: 100%;
+    //        background: linear-gradient(135deg, #2d5a50 0%, #4a7c59 100%);
+    //        display: flex;
+    //        align-items: center;
+    //        justify-content: center;
+    //        z-index: 10000;
+    //        transition: opacity 0.5s ease;
+    //    }
         
-        .preloader-content {
-            text-align: center;
-            color: white;
-        }
+    //    .preloader-content {
+    //        text-align: center;
+    //        color: white;
+    //    }
         
-        .preloader-logo {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            opacity: 0;
-            animation: fadeInUp 1s ease 0.5s forwards;
-        }
+    //    .preloader-logo {
+    //        font-size: 2rem;
+    //        font-weight: 700;
+    //        margin-bottom: 2rem;
+    //        opacity: 0;
+    //        animation: fadeInUp 1s ease 0.5s forwards;
+    //    }
         
-        .preloader-spinner {
-            margin: 2rem 0;
-        }
+    //    .preloader-spinner {
+    //        margin: 2rem 0;
+    //    }
         
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-top: 3px solid white;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto;
-        }
+    //    .spinner {
+    //        width: 50px;
+    //        height: 50px;
+    //        border: 3px solid rgba(255, 255, 255, 0.3);
+    //        border-top: 3px solid white;
+    //        border-radius: 50%;
+    //        animation: spin 1s linear infinite;
+    //        margin: 0 auto;
+    //    }
         
-        .preloader-text {
-            font-size: 1rem;
-            opacity: 0.8;
-            opacity: 0;
-            animation: fadeInUp 1s ease 1s forwards;
-        }
+    //    .preloader-text {
+    //        font-size: 1rem;
+    //        opacity: 0.8;
+    //        opacity: 0;
+    //        animation: fadeInUp 1s ease 1s forwards;
+    //    }
         
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+    //    @keyframes spin {
+    //        0% { transform: rotate(0deg); }
+    //        100% { transform: rotate(360deg); }
+    //    }
         
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    `;
+    //    @keyframes fadeInUp {
+    //        from {
+    //            opacity: 0;
+    //            transform: translateY(20px);
+    //        }
+    //        to {
+    //            opacity: 1;
+    //            transform: translateY(0);
+    //        }
+    //    }
+    //`;
     
-    document.head.appendChild(preloaderStyles);
-    document.body.appendChild(preloader);
+    //document.head.appendChild(preloaderStyles);
+    //document.body.appendChild(preloader);
     
     // Hide preloader when page is fully loaded
-    window.addEventListener('load', function() {
-        setTimeout(() => {
-            preloader.style.opacity = '0';
-            setTimeout(() => {
-                preloader.remove();
-            }, 500);
-        }, 1500); // Show preloader for at least 1.5 seconds
-    });
-}
+    //window.addEventListener('load', function() {
+      //  setTimeout(() => {
+        //    preloader.style.opacity = '0';
+          //  setTimeout(() => {
+            //    preloader.remove();
+            //}, 500);
+        //}, 1500); // Show preloader for at least 1.5 seconds
+    //});
+//}
 
 // Initialize preloader
-document.addEventListener('DOMContentLoaded', function() {
-    initPreloader();
-});
+//document.addEventListener('DOMContentLoaded', function() {
+  //  initPreloader();
+//});
 
 // Page visibility API for performance optimization
 function initPageVisibility() {
